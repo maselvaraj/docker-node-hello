@@ -1,0 +1,18 @@
+{
+    "family": "hello-world-family",
+    "containerDefinitions": [
+        {
+            "image": "maselvaraj/centos-node-hello:v_%BUILD_NUMBER%",
+            "name": "hello-world",
+            "cpu": 1,
+            "memory": 512,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ]
+}
